@@ -1,26 +1,7 @@
-#!/usr/bin/env sh
-
-# abort on errors
-set -e
-
-# build
 npm run build
 
-# navigate into the build output directory
-cd dist
+git commit -am "updates"
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
+git push -u origin main
 
-git init
-git checkout -b main
-git add -A
-git commit -m 'deploy'
-
-# if you are deploying to https://m-atkins.github.io
-# git push -f git@github.com:m-atkins/m-atkins.github.io.git main
-
-# if you are deploying to https://m-atkins.github.io/<REPO>
-git push -f git@github.com:m-atkins/prgpage.git main:gh-pages
-
-cd -
+npm run deploy
