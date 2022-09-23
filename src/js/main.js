@@ -6,10 +6,10 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 
 
-// var audio = new Audio("src/sounds/bgm.mp3");
-// audio.volume = 0.1;
-// // alert(audio.volume);
-// audio.play();
+var audio = new Audio("src/sounds/bgm.mp3");
+audio.volume = 0.1;
+// alert(audio.volume);
+audio.play();
 
 
 const countEL = document.getElementById('count');
