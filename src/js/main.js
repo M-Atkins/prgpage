@@ -4,7 +4,18 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 // import {TextGeometry} from 'three/examples/jsm/geometries/TextGeometry.js'
 // import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 
+
+
+var audio = new Audio("src/sounds/bgm.mp3");
+audio.volume = 0.1;
+alert(audio.volume);
+audio.play();
+
+
 const countEL = document.getElementById('count');
+
+
+
 
 updateVisitCount();
 function updateVisitCount() {
