@@ -4,6 +4,16 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 // import {TextGeometry} from 'three/examples/jsm/geometries/TextGeometry.js'
 // import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 
+const countEL = document.getElementById('count');
+
+updateVisitCount();
+function updateVisitCount() {
+    fetch('https://api.countapi.xyz/update/m-atkins.github.io/7dac7959-b2a2-425f-a75e-93b128350abb/?amount=1')
+    .then(res => res.json())
+    .then(res => {
+        countEL.innerHTML = res.value;
+    })
+}
 
 const monkeyUrl = new URL('../assets/smol_ame.glb', import.meta.url);
 

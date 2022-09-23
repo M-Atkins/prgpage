@@ -33,13 +33,13 @@ canvas {
 }
 
 @media screen and (min-width: 601px) {
-  div.example {
+  div.resize {
     font-size: 80px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  div.example {
+  div.resize {
     font-size: 10px;
   }
 }
@@ -54,10 +54,19 @@ canvas {
     <canvas id="bg"></canvas>   
     <main>
         <audio autoplay><source src="src/sounds/bgm.mp3" type="audio/mpeg"></audio> 
-        <div class="example">
-        <div class="centered">
-            <h1 style="font-family: 'modes', sans-serif;">NEW PAGE COMING SOON</h1>
+        <div class="resize" style="">
+          <center style="margin-top: 10vw; font-family: 'modes', sans-serif;">
+            <h1>Hi Visitor no.</h1>
+            <h1 id ="count"></h1>
+          </center>
+          <center>
+        <div class="centered" style="font-family: 'modes', sans-serif;">
+
+            <h1 >NEW PAGE COMING SOON</h1>
+
+            
         </div>
+      </center>
       </div>
     </main>
 
